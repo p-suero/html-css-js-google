@@ -24,7 +24,13 @@ main {
 footer {
     height: 80px;
     background-color: #f2f2f2;
-    padding: 0 14px
+}
+
+/* clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* setto lo stile dei link */
@@ -46,7 +52,7 @@ ul > li {
     line-height: 60px;
 }
 
-ul > li > a:hover{
+ul > li > a:hover {
     text-decoration: underline;
 }
 
@@ -68,7 +74,7 @@ ul > li > a:hover{
     color: black;
 }
 
-.profile-picture img {
+.account img {
     width: 30px;
     vertical-align: middle;
     border-radius: 50px;
@@ -91,6 +97,7 @@ ul > li > a:hover{
     display: none;
 }
 
+/* classe per attivare il dropdown nel js */
 .app-dropdown.active {
     display: block;
 }
@@ -104,7 +111,6 @@ ul > li > a:hover{
     padding: 0 10px;
     cursor: pointer;
 }
-
 
 .app-box img {
     width: 60px;
@@ -131,15 +137,35 @@ ul > li > a:hover{
 
 .search-bar {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid grey;
-    border-radius: 50px;
-    padding: 15px;
-    margin: 25px 0;
     border: 1px solid lightgrey;
-    cursor: text;
-    color: #9AA0A6;
+    border-radius: 50px;
+    color: lightgray;
+    padding: 0 6px;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+form input {
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-bottom: 0;
+}
+
+form i:last-of-type {
+    color: rgb(66, 133, 244);
+}
+
+
+input:focus,
+input:active {
+    outline: 0;
 }
 
 .search-bar:hover {
@@ -154,7 +180,7 @@ ul > li > a:hover{
     border-radius: 4px;
     padding: 10px 16px;
     cursor: pointer;
-    margin-top: 8px;
+    margin: 0 7px;
 }
 
 .buttons button:hover {
@@ -170,6 +196,7 @@ ul > li > a:hover{
     justify-content: space-between;
     align-items: center;
     border-top: 2px solid #e5e5e5;
+    padding: 0 14px;
 }
 
 #fb-left,
@@ -183,4 +210,5 @@ ul > li > a:hover{
 footer ul > li {
     display: inline-block;
     padding: 0 8px 0 8px;
+    line-height: normal;
 }

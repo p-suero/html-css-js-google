@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Google</title>
         <link rel="icon" href="img/google.png">
         <link rel="stylesheet" href="style.css">
@@ -33,6 +34,7 @@
                         <a href="#">
                             <i class="fas fa-th"></i>
                         </a>
+                        <!-- drop-down a scomparsa -->
                         <div class="app-dropdown">
                             <div class="app-box">
                                 <img src="img/foto-profilo.jpg" alt="Account">
@@ -84,7 +86,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="profile-picture">
+                    <li class="account">
                         <a href="#">
                             <img src="img/foto-profilo.jpg" alt="">
                         </a>
@@ -99,8 +101,11 @@
                     <img src="img/logo.png" alt="Logo">
                 </div>
                 <div class="search-bar">
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-microphone"></i>
+                    <form class="clearfix">
+                        <i class="fas fa-search"></i>
+                        <input type="text">
+                        <i class="fas fa-microphone"></i>
+                    </form>
                 </div>
                 <div class="buttons">
                     <button type="button" name="button">Cerca con Google</button>
