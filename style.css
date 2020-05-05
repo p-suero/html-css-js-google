@@ -7,7 +7,7 @@
 
 body {
     font-family: sans-serif;
-    color: rgba(0, 0, 0, 0.75);
+    color: #5f6368;
 }
 
 header {
@@ -19,12 +19,12 @@ header {
 
 main {
     height: calc(100vh - 60px - 80px);
-    background-color: yellow;
 }
 
 footer {
     height: 80px;
-    background-color: green;
+    background-color: #f2f2f2;
+    padding: 0 14px
 }
 
 /* setto lo stile dei link */
@@ -46,7 +46,7 @@ ul  > li {
     line-height: 60px;
 }
 
-header li > a:hover{
+ul > li > a:hover{
     text-decoration: underline;
 }
 
@@ -61,7 +61,6 @@ header li > a:hover{
 #app-grid  i {
     font-size: 20px;
     vertical-align: middle;
-    color: grey;
     cursor: pointer;
 }
 
@@ -83,7 +82,6 @@ header li > a:hover{
     transform: translateX(-50%);
     padding: 20px;
     border-radius: 20px;
-    overflow-y: auto;
     box-sizing: content-box;
     display: none;
 }
@@ -109,11 +107,66 @@ header li > a:hover{
 
 /*selettori main */
 .container {
-    width: 60%;
+    width: 40%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    padding-top: 150px;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 50px;
+    padding: 15px;
+    margin: 25px 0;
+    border: 1px solid lightgrey;
+    cursor: text;
+    color: #9AA0A6;
+}
+
+.search-bar:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.buttons button {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #5F6368;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.buttons button:hover {
+    border: 1px solid rgb(223,225,229);
+}
+
+/* selettori footer */
+#footer-top,
+#footer-bottom {
+    height: 50%;
+    padding: 0 8px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fb-left,
+#fb-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer ul > li {
+    display: inline-block;
+    padding: 0 20px 0 0;
 }
