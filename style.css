@@ -39,10 +39,10 @@ a {
     width: 30%;
 }
 
-ul  > li {
+ul > li {
     display: inline-block;
-    padding: 0 8px;
     font-size: 14px;
+    padding:0 8px;
     line-height: 60px;
 }
 
@@ -64,6 +64,10 @@ ul > li > a:hover{
     cursor: pointer;
 }
 
+#app-grid i:hover {
+    color: black;
+}
+
 .profile-picture img {
     width: 30px;
     vertical-align: middle;
@@ -73,17 +77,22 @@ ul > li > a:hover{
 /*selettori dropdown */
 .app-dropdown {
     position: absolute;
-    width: 300px;
+    width: 330px;
     height: auto;
     line-height: normal;
     background-color: white;
-    border: 1px solid rgba(0,0,0,0.87);
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
     left: -100px;
     transform: translateX(-50%);
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     border-radius: 20px;
     box-sizing: content-box;
     display: none;
+}
+
+.app-dropdown.active {
+    display: block;
 }
 
 .app-box {
@@ -91,8 +100,11 @@ ul > li > a:hover{
     height: 100px;
     float: left;
     text-align: center;
-    margin: 5px 0;
+    margin: 5px;
+    padding: 0 10px;
+    cursor: pointer;
 }
+
 
 .app-box img {
     width: 60px;
@@ -103,6 +115,7 @@ ul > li > a:hover{
 .app-box:first-child img {
     border-radius: 50px;
 }
+
 /* fine selettori dropdown */
 
 /*selettori main */
@@ -152,11 +165,11 @@ ul > li > a:hover{
 #footer-top,
 #footer-bottom {
     height: 50%;
-    padding: 0 8px;
     display: flex;
     font-size: 14px;
     justify-content: space-between;
     align-items: center;
+    border-top: 2px solid #e5e5e5;
 }
 
 #fb-left,
@@ -166,7 +179,8 @@ ul > li > a:hover{
     align-items: center;
 }
 
+#footer-top p,
 footer ul > li {
     display: inline-block;
-    padding: 0 20px 0 0;
+    padding: 0 8px 0 8px;
 }
