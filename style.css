@@ -181,6 +181,7 @@ input:active {
     padding: 10px 16px;
     cursor: pointer;
     margin: 0 7px;
+    outline: 0;
 }
 
 .buttons button:hover {
