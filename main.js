@@ -15,3 +15,14 @@ $("#app-grid a").click(function(){
 //     //gli assegno il toogle
 //     dropdown.toggle();
 // })
+
+//chiudo il dropdown quando clicco in punto al di fuori di questo
+//interceto il click sul document
+$(document).click(function(event) {
+    //intercetto il click sull'elemento specifico cliccato nel document
+    var target = $(event.target);
+    console.log(target);
+    if(!(target.is("#app-grid *"))) {
+        $(".app-dropdown").removeClass("active");
+    }
+})
